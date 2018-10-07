@@ -16,7 +16,9 @@ urlpatterns = [
     path('<int:year>/', views.carpatclim_y, name='carpatclim_y'),
     # test view examples
     path('test/', views_test.test, name='test'),
-    path('test/simple/', views_test.simple, name='simple'),
-    path('test/mplimage.png', views_test.mplimage, name='mplimage'),
-    path('test/sine.png', views_test.show_sine, name='show_sine'),
+    path('test/random.png', views_test.random_graph, name='random_graph'),
+    path('test/sine_variant_1.png', views_test.sine_variant_1, name='sine_variant_1'),
+    path('test/sine_variant_2.png', views_test.sine_variant_2, name='sine_variant_2'),
+    path('test/sine.png', views_test.sine, name='sine'),
+    path('test/spiral.png', views_test.spiral_graph, name='spiral_graph'),
 ]
